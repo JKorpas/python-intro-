@@ -1,3 +1,4 @@
+# Link do repo: https://github.com/JKorpas/python-intro-
 def check_email(email):
     # czy email jest stringiem
     if not isinstance(email, str):

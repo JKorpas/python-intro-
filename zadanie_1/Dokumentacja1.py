@@ -1,3 +1,5 @@
+# Link do repo: https://github.com/JKorpas/python-intro-
+
 # Opis funkcji wbudowanej
 
 # https://docs.python.org/3/library/functions.html#zip
