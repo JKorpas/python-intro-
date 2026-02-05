@@ -12,12 +12,16 @@ bs_response.raise_for_status()
 # tworzymy obiekt typu beautifulsoup który pozwala na parsowanie HTML, bs_response.text zawiera surowy kod
 soup = bs4.BeautifulSoup(bs_response.text, "lxml")
 
-
+# pobieramy tekst
 print(soup.title.text)
 
 # wyswietlimy pierwsze wystąpienie czyli zawartosc pierwszego ogłoszenia
 first_job = soup.find("div", class_="card-content")
 print(first_job.text)
+
+# wyswietlenie wszystkich tagów <h2> z klasami title oraz is-5
+print(soup.select("h2.title.is-5"))
+
 
 # teraz zbierzemy wszystkie stanowiska i je wyswietlimy
 job_titles = soup.find_all("h2", class_="title is-5")
