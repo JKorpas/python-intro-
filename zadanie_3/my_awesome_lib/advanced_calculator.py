@@ -23,7 +23,7 @@ class AdvancedCalculator(BasicCalculator):
     # Średnia
     def average(self, values):
         if not values:
-            raise ValueError("List must not be empty")
+            raise ValueError("Lista nie może być pusta")
         return sum(values) / len(values)
 
     # Maxymalna wartosc
