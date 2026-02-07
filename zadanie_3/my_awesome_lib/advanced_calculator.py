@@ -20,6 +20,7 @@ class AdvancedCalculator(BasicCalculator):
     def absolute(self, x):
         return abs(x)
 
+    # Średnia
     def average(self, values):
         if not values:
             raise ValueError("List must not be empty")
